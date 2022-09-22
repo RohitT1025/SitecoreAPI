@@ -1,0 +1,158 @@
+{
+	"id": "f9aef4ca-d4b4-cc0c-b4c8-05715c1560f8",
+	"name": "Sitecore",
+	"description": "",
+	"order": [
+		"6cc975ba-72e4-3013-074d-6d003a3d1a95",
+		"1fdc9c3e-9135-e4d5-b48d-565dc4557e18",
+		"b7ae7c82-8513-de91-0185-5f6ce5765815",
+		"738f6aec-c4d9-93f4-0c2c-4eebe44cd09e"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1663610926366,
+	"owner": 14074320,
+	"public": false,
+	"requests": [
+		{
+			"id": "1fdc9c3e-9135-e4d5-b48d-565dc4557e18",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://sc1020sc.dev.local/sitecore/api/ssc/item/24CAA808-92A1-45DD-AF6A-65F9A519FF4A?IncludeStandardTemplateFields",
+			"queryParams": [
+				{
+					"key": "IncludeStandardTemplateFields",
+					"value": "",
+					"equals": false,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1663860257333,
+			"name": "Get Item",
+			"description": "Get Item API",
+			"collectionId": "f9aef4ca-d4b4-cc0c-b4c8-05715c1560f8",
+			"responses": []
+		},
+		{
+			"id": "6cc975ba-72e4-3013-074d-6d003a3d1a95",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://sc1020sc.dev.local/sitecore/api/ssc/auth/login",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1663860254573,
+			"name": "Login",
+			"description": "Login API",
+			"collectionId": "f9aef4ca-d4b4-cc0c-b4c8-05715c1560f8",
+			"responses": [],
+			"rawModeData": "{\r\n    \"domain\":\"sitecore\",\r\n    \"username\":\"admin\",\r\n    \"password\":\"b\"\r\n}"
+		},
+		{
+			"id": "738f6aec-c4d9-93f4-0c2c-4eebe44cd09e",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://sc1020sc.dev.local/sitecore/api/ssc/auth/logout",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1663860263303,
+			"name": "Logout",
+			"description": "Login API",
+			"collectionId": "f9aef4ca-d4b4-cc0c-b4c8-05715c1560f8",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "b7ae7c82-8513-de91-0185-5f6ce5765815",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://sc1020sc.dev.local/sitecore/api/ssc/item//sitecore/content/PlatformX/SitePages?master&en-US",
+			"queryParams": [
+				{
+					"key": "master",
+					"value": "",
+					"equals": false,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "en-US",
+					"value": "",
+					"equals": false,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1663860259972,
+			"name": "Create Item",
+			"description": "Get Item API",
+			"collectionId": "f9aef4ca-d4b4-cc0c-b4c8-05715c1560f8",
+			"responses": [],
+			"rawModeData": "{   \r\n\t\r\n   \"ItemName\": \"Test\",  \r\n   \"TemplateID\": \"{EDA38359-38AD-487F-A7A9-75389DEBDA2C}\",  \r\n   \"QuoteText\": \"Rohit Quote\",  \r\n   \"AuthorName\": \"Rohit\"\r\n  }"
+		}
+	]
+}
